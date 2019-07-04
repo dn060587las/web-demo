@@ -1,4 +1,4 @@
-package main.java.org.demo.domains;
+package org.demo.domains;
 
 public class Bird {
 
