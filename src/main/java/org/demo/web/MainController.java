@@ -9,21 +9,20 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import java.util.List;
 
 @Controller
-@RequestMapping("main")
 public class MainController {
 
     public MainController() {
         System.out.println("Controller created");
     }
 
-    @RequestMapping(value = {"get-some-data", "/"}, method = RequestMethod.GET)
+    @RequestMapping(value = {"/main/get-some-data", "/"}, method = RequestMethod.GET)
     @ResponseBody
     public String[] getSomeData(Integer param1, Double param2, String param3) {
         System.out.println("Controller method invoked");
         return new String[]{"1111", "2222", "333"};
     }
 
-    @RequestMapping(value = "add-new-bird", method = RequestMethod.PUT)
+    @RequestMapping(value = "main/add-new-bird", method = RequestMethod.PUT)
     @ResponseBody
     public Bird addNewBird(String name) {
         Bird b = new Bird();
