@@ -36,7 +36,7 @@ public interface CalendarProvider {
     
     List<Month> getMonthes(int fiscalDateFrom, int fiscalDateTo) throws InvalidFiscalDateFormatException;
     
-    Month getDayInfo(int dayInYear) throws InvalidDayInYearException;
+    Month getDayInfo(int year, int dayInYear) throws InvalidDayInYearException;
         
     List<String> getMonthesFormatted(int fiscalDateFrom, int fiscalDateTo) throws InvalidFiscalDateFormatException;
 }
