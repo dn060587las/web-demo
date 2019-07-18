@@ -1,24 +1,17 @@
 package org.demo.domains;
 
+import lombok.Data;
+
+import java.util.List;
+
+@Data
 public class Bird {
 
-    private long id;
+    private String id;
 
     private String name;
 
-    public long getId() {
-        return id;
-    }
+    private Double size;
 
-    public void setId(long id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
+    private Location location;
 }

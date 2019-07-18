@@ -37,7 +37,7 @@ public class MainController {
         Bird b = new Bird();
         b.setName(name);
         //generate id
-        b.setId(1);
+        b.setId("TEST");
         return b;
     }
 
